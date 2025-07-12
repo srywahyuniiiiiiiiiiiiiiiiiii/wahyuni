@@ -1,67 +1,33 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>FloatLayout HTML</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            background-color: #f0f0f0;
-        }
-        .float-layout {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .btn1 {
-            position: absolute;
-            width: 20%;
-            height: 20%;
-            left: 40%;
-            top: 40%;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-    <div class="float-layout">
-        <button class="btn1">btn1</button>
-    </div>
-</body>
-</html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h4>Penjelasan Kode Program FloatLayout</h4>
+  <link rel="stylesheet" href="style.css">
 
+  <nav>
+    <p1>Tujuan program FloatLayout dalam konteks pemrograman GUI (Graphical User Interface), seperti yang digunakan pada framework Kivy</p1>
+  </nav>
 
-Mengimpor komponen-komponen dari Kivy.
-Yang digunakan hanya Button dan FloatLayout.
-RelativeLayout dan ScatterLayout tidak digunakan dalam kode ini, sehingga bisa dihapus untuk efisiensi.class myApp(App):
-class myApp(App):
-Membuat kelas myApp yang turunannya berasal dari kelas App di Kivy.
-Ini adalah struktur dasar dalam membuat aplikasi Kivy.
-def build(self): Method build()
- adalah tempat utama untuk membuat dan mengatur tampilan aplikasi.
-f_layout = FloatLayout() 
-Membuat layout bernama f_layout dengan tipe FloatLayout.
-FloatLayout memungkinkan penempatan widget dengan ukuran dan posisi relatif terhadap ukuran layar menggunakan size_hint dan pos_hint.
+  <main>
+    <section id="FloatLayout">
+      <h2>Tugas Pemograman Mobile | SRY WAHYUNI</h2>
+      <img src="widget.jpg" alt="widget" class="pet-image">
+      <p></p>Penjelasan Baris Kode</p>
 
-Membuat sebuah tombol dengan teks "btn1".
-size_hint=(0.2, 0.2) berarti ukuran tombol adalah 20% dari lebar dan 20% dari tinggi layar.
-pos_hint={'x': 0.4, 'y': 0.4} berarti tombol akan muncul pada posisi 40% dari kiri dan 40% dari bawah layar, kira-kira di tengah layar.
-f_layout.add_widget(btn1)
-Menambahkan tombol btn1 ke dalam FloatLayout.
-return f_layout
-Mengembalikan f_layout sebagai tampilan utama aplikasi.
-myApp().run()
-Membuat instance dari kelas myApp dan menjalankan aplikasinya.
-
-Kesimpulan Akhir
-Kode ini akan menghasilkan sebuah aplikasi Kivy sederhana yang menampilkan satu tombol berukuran kecil di tengah layar, menggunakan FloatLayout untuk mengatur posisi dan ukuran tombol secara relatif terhadap ukuran layar.
-Kalau kamu ingin pengembangan
-
-
-
-
+</p>`: 
+Kode tersebut adalah aplikasi sederhana menggunakan framework Kivy 
+di Python yang menampilkan sebuah tombol menggunakan FloatLayout. 
+Pertama, kode mengimpor komponen yang diperlukan, seperti Button untuk 
+membuat tombol, dan FloatLayout untuk mengatur posisi widget secara fleksibel
+ menggunakan properti pos_hint dan size_hint. Di dalam class myApp yang merupakan 
+ turunan dari App, fungsi build() digunakan untuk membuat tampilan utama aplikasi.
+  Di dalam fungsi ini, dibuat sebuah instance dari FloatLayout, lalu ditambahkan sebuah 
+  tombol (btn1) dengan ukuran 20% dari ukuran layout dan diposisikan 40% dari kiri dan bawah 
+  layar. Tombol ini kemudian ditambahkan ke dalam layout, dan layout tersebut dikembalikan agar
+   ditampilkan saat aplikasi dijalankan. Terakhir, myApp().run() digunakan untuk memulai
+    aplikasi. Perlu dicatat bahwa ada beberapa impor layout lain yang tidak digunakan
+     (RelativeLayout dan ScatterLayout) 
+serta impor App yang seharusnya ditambahkan agar kode bisa berjalan.
+</section>
